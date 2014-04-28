@@ -11,7 +11,6 @@ module Kernel
       param[:project] ||= file.split("/")[file.split("/").rindex{|x|paths.include?(x)}-1]
       parts = "/#{param[:project]}/"
       paths.each do |path|
-        puts file[0,file.index(parts)+parts.size-1]+"/#{path}"
         $:.unshift file[0,file.index(parts)+parts.size-1]+"/#{path}"
       end
     end
