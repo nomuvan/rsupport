@@ -1,6 +1,6 @@
 # Rsupport
 
-TODO: Write a gem description
+Suport Ruby Development Library.
 
 ## Installation
 
