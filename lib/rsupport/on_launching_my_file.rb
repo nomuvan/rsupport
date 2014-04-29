@@ -13,6 +13,7 @@ module Kernel
       paths.each do |path|
         $:.unshift file[0,file.index(parts)+parts.size-1]+"/#{path}"
       end
+      [param[:require]].flatten.each{|r|require r} if param[:require]
     end
   end
 
